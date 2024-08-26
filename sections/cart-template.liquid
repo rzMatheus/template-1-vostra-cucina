@@ -411,9 +411,9 @@
                       <span class="cart-recap__amount-saved">{{ 'cart.general.amount_saved_html' | t: amount_saved: amount_saved }}</span>
                     {%- endif -%}
 
-                   <div>
-                   <span class="barradefundo">PIX/CARTÃO RECEBA 3 DIAS ANTES</span>
-                   </div>
+                   {% comment %}<div>{% endcomment %}
+                   {% comment %}<span class="barradefundo">PIX/CARTÃO RECEBA 3 DIAS ANTES</span>{% endcomment %}
+                   {% comment %}</div>{% endcomment %}
                     
                     {%- if section.settings.enable_order_notes -%}
                       <div class="cart-recap__note">
