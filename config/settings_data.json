@@ -393,8 +393,8 @@
             "type":"item",
             "settings":{
               "icon":"bi-fast-delivery",
-              "title":"Frete Grátis",
-              "content":"<p>Envio rápido e acompanhado com código de rastreio<br\/><\/p>"
+              "title": "Spedizione Gratuita",
+              "content": "<p>Spedizione rapida e tracciata con codice di tracciamento<br/></p>"
             }
           },
           "text-with-icons-2":{
