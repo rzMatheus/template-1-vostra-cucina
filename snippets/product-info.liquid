@@ -48,7 +48,7 @@
         {% assign year = 'now' | date: "%Y" | plus: 0 %}
 
         {% assign date_factor = year | times: 10000 | plus: month | times: 100 | plus: day %}
-        {% assign random = product.id | plus: date_factor | modulo: 777 %}
+        {% assign random = product.id | plus: date_factor | modulo: 10000 %}
         {%- if section.settings.mostrar_quantidadevendidos -%}
       <span class="quantitysell" style="font-size: 14px;color: #b7b7b7;">Nuovo | <!--INICIO VENDIDOS-->{{ random }} Venduti<!--FIM VENDIDOS--></span>
       
