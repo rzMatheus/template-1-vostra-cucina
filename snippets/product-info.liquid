@@ -48,7 +48,7 @@
         {% assign year = 'now' | date: "%Y" | plus: 0 %}
 
         {% assign date_factor = year | times: 10000 | plus: month | times: 100 | plus: day %}
-        {% assign random = product.id | plus: date_factor | modulo: 1000 %}
+        {% assign random = product.id | plus: date_factor | modulo: 100000 %}
         {%- if section.settings.mostrar_quantidadevendidos -%}
       <span class="quantitysell" style="font-size: 14px;color: #b7b7b7;">Nuovo | <!--INICIO VENDIDOS-->{{ random }} Venduti<!--FIM VENDIDOS--></span>
       
@@ -464,7 +464,7 @@
 
       <script>    
         $.getJSON( "https://wtfismyip.com/json", function(localizacao) {
-          var localizacao = localizacao['YourFuckingCity"'];
+          var localizacao = localizacao['YourFuckingCity'];
           var regiao = localizacao.replace(", Italy", "");
           $("#custom-address").html("per <b>" + localizacao + " e Regione</b>");      });
       </script>
