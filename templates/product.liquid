@@ -18,4 +18,4 @@ If the product contains the special __gift tag, we prevent it to be completely a
     ShopifyXR('addModels', {{ product.media | where: 'media_type', 'model' | json }});
   </script>
 {%- endif -%}{% include 'salesbox-common' %}
- <div id='Areviewsapp' class='page-full'>{%  render 'aliexpress_reviews' , product: product %}</div>
+{% render 'wise-product-reviews', product_id: product.id, default_type: 'product_reviews' %}

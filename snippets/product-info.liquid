@@ -283,6 +283,7 @@
                         <label class="block-swatch__item" for="{{ block_swatch_id }}" title="{{ value | escape }}">
                           <span class="block-swatch__item-text">{{ value }}</span>
                         </label>
+                          {% render 'wise-star-rating', product: product, star_size: '18', align: 'left' %}
                       </div>
                     {%- endfor -%}
                   </div>
