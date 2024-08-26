@@ -624,6 +624,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "7689690182613285879": {
+        "type": "shopify:\/\/apps\/wisereviews-reviews-importer\/blocks\/wise-reviews\/9ef986f0-166f-4cdf-8a67-c9585e8df5a9",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
