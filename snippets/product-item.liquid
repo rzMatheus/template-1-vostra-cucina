@@ -234,12 +234,12 @@ F
         {{ price_list }}
       {%- endif -%}
       
-      <p style="margin: -20px 0px 0px 0px; font-size: 14px;">ou <b>12x</b> de <b>{{- product.price | divided_by: 12 | times: 1.2161 | money -}}</b></p>
+      {% comment %}<p style="margin: -20px 0px 0px 0px; font-size: 14px;">ou <b>12x</b> de <b>{{- product.price | divided_by: 12 | times: 1.2161 | money -}}</b></p>{% endcomment %}
 
         {%- if settings.mostrar_fretegratis1 -%}
       
    <div style="margin-top: 0px;display:">
- 
+       <p>Spedizione Gratuita</p>
    </div>
       
       {%- endif -%}
