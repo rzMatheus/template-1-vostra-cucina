@@ -4430,7 +4430,7 @@ img.lazyload[data-sizes=auto] {
 
 @media screen and (min-width: 1280px) {
   .collection-item {
-    width: 16,67%;
+    width: 16%;
   }
 }
 
