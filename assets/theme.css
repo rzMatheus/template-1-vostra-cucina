@@ -4401,7 +4401,7 @@ img.lazyload[data-sizes=auto] {
   .collection-list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between !important;
     margin: 30px -14px 0 -14px;
     white-space: nowrap;
     overflow: hidden;
