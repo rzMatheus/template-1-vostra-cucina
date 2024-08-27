@@ -4399,9 +4399,6 @@ img.lazyload[data-sizes=auto] {
 
 @media screen and (min-width: 1000px) {
   .collection-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between !important;
     margin: 30px -14px 0 -14px;
     white-space: nowrap;
     overflow: hidden;
