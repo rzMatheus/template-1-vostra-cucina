@@ -598,11 +598,38 @@
           "show_quick_buy": "list",
           "quick_links": ""
         }
+      },
+      "featured_product_gPgWz6": {
+        "type": "featured-product",
+        "settings": {
+          "product": "3pcs-classic-cookie-cutters-stainless-steel-pastry-cutter-set-biscuit-molds-baking-tools-kitchen-accessories",
+          "title": "Featured product",
+          "link_title": "View details",
+          "link_url": "",
+          "show_vendor": true,
+          "show_sku": false,
+          "show_share_buttons": true,
+          "show_description": true,
+          "description_below_add_to_cart": false,
+          "selector_mode": "block",
+          "color_mode": "color",
+          "show_quantity_selector": true,
+          "show_reviews_badge": false,
+          "show_payment_button": true,
+          "image_size": "small",
+          "enable_image_zoom": true,
+          "enable_video_looping": false,
+          "zoom_effect": "outside",
+          "carousel_effect": "fade",
+          "show_inventory_quantity": false,
+          "low_inventory_threshold": 0
+        }
       }
     },
     "content_for_index": [
       "slideshow",
       "1649489657b78ca727",
+      "featured_product_gPgWz6",
       "16153539675ef431a7",
       "16153541158fc73818"
     ],
