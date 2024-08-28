@@ -48,7 +48,18 @@
         {% assign year = 'now' | date: "%Y" | plus: 0 %}
 
         {% assign date_factor = year | times: 10000 | plus: month | times: 100 | plus: day %}
-        {% assign random = product.id | plus: date_factor | modulo: 10000 %}
+
+        {%- assign days_since_start = date_factor | minus: 20230101 -%}
+
+        {%- assign base_random = product.id | plus: date_factor | modulo: 10000 -%}
+
+        {%- assign total_increment = 0 -%}
+        {%- for i in (1..days_since_start) -%}
+            {%- assign daily_increment = i | times: 100 | modulo: 4 | plus: 2 -%}
+            {%- assign total_increment = total_increment | plus: daily_increment -%}
+        {%- endfor -%}
+
+        {% assign random = base_random | plus: total_increment %}
         {%- if section.settings.mostrar_quantidadevendidos -%}
       <span class="quantitysell" style="font-size: 14px;color: #b7b7b7;">Nuovo | <!--INICIO VENDIDOS-->{{ random }} Venduti<!--FIM VENDIDOS--></span>
       

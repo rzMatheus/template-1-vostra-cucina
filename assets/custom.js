@@ -61,5 +61,5 @@ function parcelamento() {
 
 
 $(".block-swatch__radio").change(function () {
-  setTimeout(function () { parcelamento(); }, 150);
+  setTimeout(function () {  }, 150);
 });
