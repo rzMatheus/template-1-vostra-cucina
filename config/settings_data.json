@@ -436,7 +436,7 @@
       "16153539675ef431a7": {
         "type": "featured-collection",
         "settings": {
-          "collection": "",
+          "collection": "tutti",
           "title": "Scopri i nostri prodotti più venduti",
           "products_count": 50,
           "layout": "vertical",
@@ -624,6 +624,11 @@
           "show_inventory_quantity": false,
           "low_inventory_threshold": 0
         }
+      },
+      "ali-reviews-review-box": {
+        "type": "ali-reviews-review-box",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
@@ -646,21 +651,9 @@
         "settings": {
         }
       },
-      "6544682535036668446": {
-        "type": "shopify:\/\/apps\/pumper-bundle-qty\/blocks\/app-embed\/0856870d-2aca-4b1e-a662-cf1797f61270",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "7689690182613285879": {
         "type": "shopify:\/\/apps\/wisereviews-reviews-importer\/blocks\/wise-reviews\/9ef986f0-166f-4cdf-8a67-c9585e8df5a9",
         "disabled": false,
-        "settings": {
-        }
-      },
-      "8924079168617604943": {
-        "type": "shopify:\/\/apps\/kudosi-ali-reviews\/blocks\/widget-popup\/bf2eea72-0400-4db1-8908-44b7418f9a88",
-        "disabled": true,
         "settings": {
         }
       }
