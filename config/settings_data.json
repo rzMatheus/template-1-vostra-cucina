@@ -383,6 +383,24 @@
       },
       "popups": {
         "type": "popups",
+        "blocks": {
+          "exit_pw4dct": {
+            "type": "exit",
+            "settings": {
+              "show_only_for_visitors": true,
+              "show_only_once": true,
+              "title": "Get 15% off",
+              "subheading": "on your next order + exclusive offers",
+              "show_newsletter": true,
+              "button_text": "Get my 15% off",
+              "success_message": "You will receive soon an email containing your discount code!",
+              "close_message": "No thanks, I'd rather pay more"
+            }
+          }
+        },
+        "block_order": [
+          "exit_pw4dct"
+        ],
         "settings": {
         }
       },
