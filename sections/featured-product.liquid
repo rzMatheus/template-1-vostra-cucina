@@ -148,9 +148,9 @@
                 <div class="product-form__add-to-cart">
                   {% comment %}<button type="submit" class="product-form__add-button button button--primary">{{ 'product.form.add_to_cart' | t }}</button>{% endcomment %}
 
-                  {% comment %}{%- if section.settings.show_payment_button -%}{% endcomment %}
-                    {% comment %}{{ form | payment_button }}{% endcomment %}
-                  {% comment %}{%- endif -%}{% endcomment %}
+                  {%- if section.settings.show_payment_button -%}
+                    {{ form | payment_button }}
+                  {%- endif -%}
                 </div>
               </div>
 
