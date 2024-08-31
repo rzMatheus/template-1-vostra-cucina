@@ -459,7 +459,7 @@
         <img style="margin: -12px 5px -10px -8px" src="//cdn.shopify.com/s/files/1/0897/5004/4975/files/poste-italiane.svg?v=1724705833">
 
         {% assign free_shipping_threshold = 10 %}
-        {%  assign preco_produto = product.price | money %}
+        {% assign preco_produto = product.price | divided_by: 100 %}
 
         <script>
             console.log('Preço do produto: {{ product.price | money }}');
