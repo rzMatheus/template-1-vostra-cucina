@@ -460,11 +460,9 @@
         {% assign free_shipping_threshold = 10 %} <!-- Defina o valor mínimo para frete grátis -->
 
     {% if product.price >= free_shipping_threshold %}
-    <div>
         <p class="ttl-frete">{{ section.settings.titulofrete }}
             <span class="ip-frete" id="custom-address">Caricamento delle informazioni...</span></p>
         <p class="txt-frete">Spedizione Gratuita</p>
-    </div>
     {% else %}
         <p>Aggiungi altri {{ free_shipping_threshold | minus: product.price | money }} al tuo carrello per ottenere la spedizione gratuita!</p>
     {% endif %}
