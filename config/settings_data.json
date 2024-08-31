@@ -654,6 +654,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "5666630776487783528": {
+        "type": "shopify:\/\/apps\/shopclimb-trust-badges\/blocks\/app-embed-block\/d9412ad3-cc85-4163-8f55-90aed51fe5a7",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
