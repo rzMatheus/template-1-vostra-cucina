@@ -508,6 +508,12 @@
               "collection": "air-fryer"
             }
           },
+          "collection_P7kPrw": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
           "1649489657b78ca727-1": {
             "type": "collection",
             "settings": {
@@ -541,6 +547,7 @@
         },
         "block_order": [
           "1649489657b78ca727-0",
+          "collection_P7kPrw",
           "1649489657b78ca727-1",
           "1649489657b78ca727-2",
           "1649489657b78ca727-3",
@@ -623,7 +630,7 @@
       "image_with_text_4jcK6g": {
         "type": "image-with-text",
         "settings": {
-          "image": "shopify:\/\/shop_images\/c1afe36c-53a8-48a2-8d13-237644b0fae9.jpg",
+          "image": "shopify:\/\/shop_images\/9145cc0f-230c-42be-8955-de898f562e97.jpg",
           "image_position": "left",
           "image_width": 50,
           "title": "Tagliere a legno: L’eleganza e la funzionalità in cucina",
