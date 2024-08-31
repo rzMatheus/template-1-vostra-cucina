@@ -352,7 +352,7 @@
           "show_reviews_badge": false,
           "trust_title": "Pagamento Sicuro",
           "show_payment_icons": true,
-          "custom_security_badge": "shopify:\/\/shop_images\/McAfee_SECURE.svg",
+          "custom_security_badge": "shopify:\/\/shop_images\/mcaffe_stripe-2.svg",
           "show_shipping_estimator": false,
           "shipping_estimator_default_country": "",
           "show_refunds_policy": false
