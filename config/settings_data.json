@@ -61,10 +61,10 @@
     "cart_empty_button_link": "shopify:\/\/collections\/all",
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "50",
-    "social_facebook": "Facebook.com.br",
+    "social_facebook": "Facebook.com",
     "social_twitter": "",
     "social_pinterest": "",
-    "social_instagram": "instagram.com.br",
+    "social_instagram": "instagram.com",
     "social_vimeo": "",
     "social_tumblr": "",
     "social_youtube": "",
@@ -588,6 +588,9 @@
       },
       "featured_product_gPgWz6": {
         "type": "featured-product",
+        "custom_css": [
+
+        ],
         "settings": {
           "product": "electric-spin-scrubber-with-5-replaceable-brush-head-power-electric-cleaning-brush-handheld-rechargeable-shower-scrubber",
           "title": "La scelta migliore per la pulizia della tua cucina",
