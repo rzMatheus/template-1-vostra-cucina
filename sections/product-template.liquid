@@ -404,10 +404,10 @@
     {%- endif -%}
   {%- else -%}
     {%- comment -%}We display the quick view within the product template so we can re-use the same settings{%- endcomment -%}
-    {% comment %}<div class="featured-product">{% endcomment %}
-      {% comment %}{%- render 'product-gallery' -%}{% endcomment %}
-      {% comment %}{%- render 'product-info' -%}{% endcomment %}
-    {% comment %}</div>{% endcomment %}
+    <div class="featured-product">
+      {%- render 'product-gallery' -%}
+      {%- render 'product-info' -%}
+    </div>
   {%- endif -%}
   
  
