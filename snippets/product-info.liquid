@@ -469,7 +469,7 @@
             <span class="ip-frete" id="custom-address">Caricamento delle informazioni...</span></p>
         <p class="txt-frete">Spedizione Gratuita</p>
     {% else %}
-        <p>Aggiungi altri {{ free_shipping_threshold | minus: product.price | money }} al tuo carrello per ottenere la spedizione gratuita!</p>
+        <p>Aggiungi altri {{ free_shipping_threshold | minus: preco_produto | money }} al tuo carrello per ottenere la spedizione gratuita!</p>
     {% endif %}
 
 
