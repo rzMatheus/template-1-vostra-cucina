@@ -460,7 +460,7 @@
 
         {% assign free_shipping_threshold = 10 %}
         <script>
-            console.log('Preço do produto: {{ product.price | times: 1.2161 }}');
+            console.log('Preço do produto: {{ product.price |  times: 100 }}');
         </script><!-- Defina o valor mínimo para frete grátis -->
     {% if product.price >= free_shipping_threshold %}
         <p class="ttl-frete">{{ section.settings.titulofrete }}
