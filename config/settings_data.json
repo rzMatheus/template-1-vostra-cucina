@@ -378,8 +378,8 @@
           "link": "",
           "show_newsletter": false,
           "newsletter_button": "",
-          "newsletter_title": "Newsletter",
-          "newsletter_content": "<p>Se inscreva em nossa newsletter para receber as últimas promoções.<\/p>"
+          "newsletter_title": "",
+          "newsletter_content": ""
         }
       },
       "popups": {
