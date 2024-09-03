@@ -8,7 +8,6 @@ If the product contains the special __gift tag, we prevent it to be completely a
   </script>
 {%- else -%}
   <!-- Start of Judge.me code --><div style='clear:both'></div>
-  {% comment %}<div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-product-title='{{ product.title | escape }}' data-id='{{ product.id }}' data-auto-install='false'>{{ product.metafields.judgeme.widget }}</div><!-- End of Judge.me code -->{% endcomment %}
   {% section 'product-template' %}
   {% section 'ali-reviews-review-box' %}
   {% section 'product-recommendations' %}
@@ -20,4 +19,5 @@ If the product contains the special __gift tag, we prevent it to be completely a
     ShopifyXR('addModels', {{ product.media | where: 'media_type', 'model' | json }});
   </script>
 {%- endif -%}{% include 'salesbox-common' %}
-{% render 'wise-product-reviews', product_id: product.id, default_type: 'product_reviews' %}
+<div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-product-title='{{ product.title | escape }}' data-id='{{ product.id }}' data-auto-install='false'>{{ product.metafields.judgeme.widget }}</div><!-- End of Judge.me code -->
+{% comment %}{% render 'wise-product-reviews', product_id: product.id, default_type: 'product_reviews' %}{% endcomment %}
