@@ -508,12 +508,6 @@
               "collection": "air-fryer"
             }
           },
-          "collection_P7kPrw": {
-            "type": "collection",
-            "settings": {
-              "collection": ""
-            }
-          },
           "1649489657b78ca727-1": {
             "type": "collection",
             "settings": {
@@ -547,7 +541,6 @@
         },
         "block_order": [
           "1649489657b78ca727-0",
-          "collection_P7kPrw",
           "1649489657b78ca727-1",
           "1649489657b78ca727-2",
           "1649489657b78ca727-3",
