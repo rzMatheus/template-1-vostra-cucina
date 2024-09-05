@@ -9,7 +9,12 @@ If the product contains the special __gift tag, we prevent it to be completely a
 {%- else -%}
   <!-- Start of Judge.me code --><div style='clear:both'></div>
   {% section 'product-template' %}
-  {% section 'ali-reviews-review-box' %}
+  <!-- Start of Judge.me code -->
+  <div style='clear:both'></div>
+  <div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-id='{{ product.id }}'>
+    {{ product.metafields.judgeme.widget }}
+  </div>
+  <!-- End of Judge.me code -->
   {% section 'product-recommendations' %}
   {% section 'static-promotion-list' %}
   {% section 'static-recently-viewed-products' %}
