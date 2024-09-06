@@ -144,16 +144,16 @@
                     </div>
                   {%- endif -%}
                 </div>
-{% comment %}{% endcomment %}
-                {% comment %}<div class="product-form__add-to-cart">{% endcomment %}
-                  {% comment %}{%- if section.settings.show_add_to_cart -%}{% endcomment %}
-                    {% comment %}<button type="submit" class="product-form__add-button button button--primary">{{ 'product.form.add_to_cart' | t }}</button>{% endcomment %}
-                  {% comment %}{%- endif -%}{% endcomment %}
-{% comment %}{% endcomment %}
-                  {% comment %}{%- if section.settings.show_payment_button -%}{% endcomment %}
-                    {% comment %}{{ form | payment_button }}{% endcomment %}
-                  {% comment %}{%- endif -%}{% endcomment %}
-                {% comment %}</div>{% endcomment %}
+
+                <div class="product-form__add-to-cart">
+                  {%- if section.settings.show_add_to_cart -%}
+                    <button type="submit" class="product-form__add-button button button--primary">{{ 'product.form.add_to_cart' | t }}</button>
+                  {%- endif -%}
+
+                  {%- if section.settings.show_payment_button -%}
+                    {{ form | payment_button }}
+                  {%- endif -%}
+                </div>
               </div>
 
               {%- if section.settings.show_description and section.settings.description_below_add_to_cart -%}
