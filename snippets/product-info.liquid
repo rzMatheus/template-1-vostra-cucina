@@ -591,9 +591,11 @@
         {%- if product.template_suffix != 'contact' -%}
           {%- if selected_variant.available -%}
             {%- if product.template_suffix == 'pre-order' -%}
-              {% comment %}<button type="submit" style="font-size: 19px;" type="submit" name="add" id="AddToCart" class="product-form__add-button button button--primary" data-action="add-to-cart">{{ 'product.form.pre_order' | t }}</button>{% endcomment %}
+              <button type="submit" style="font-size: 19px;" type="submit" name="add" id="AddToCart" class="product-form__add-button button button--primary" data-action="add-to-cart">{{ 'product.form.pre_order' | t }}</button>
+            {%- elseif product.template_suffix = 'featured-product' -%}
+              {% comment %}<button type="submit" style="font-size: 19px;" type="submit" name="add" id="AddToCart" class="product-form__add-button button button--primary" data-action="add-to-cart">{{ 'product.form.add_to_cart' | t }}</button>{% endcomment %}
             {%- else -%}
-              <button type="submit" style="font-size: 19px;" type="submit" name="add" id="AddToCart" class="product-form__add-button button button--primary" data-action="add-to-cart">{{ 'product.form.add_to_cart' | t }}</button>
+                <button type="submit" style="font-size: 19px;" type="submit" name="add" id="AddToCart" class="product-form__add-button button button--primary" data-action="add-to-cart">{{ 'product.form.pre_order' | t }}</button>
             {%- endif -%}
 
             {%- if section.settings.mostrar_addtocart -%}
