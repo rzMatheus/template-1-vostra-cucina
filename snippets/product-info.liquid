@@ -590,14 +590,14 @@
       <div class="product-form__payment-container">
         {%- if product.template_suffix != 'contact' -%}
           {%- if selected_variant.available -%}
-            {% comment %}{%- if product.template_suffix == 'pre-order' -%}{% endcomment %}
-              {% comment %}<button type="submit" style="font-size: 19px;" type="submit" name="add" id="AddToCart" class="product-form__add-button button button--primary" data-action="add-to-cart">{{ 'product.form.pre_order' | t }}</button>{% endcomment %}
-            {% comment %}{%- else -%}{% endcomment %}
+            {%- if product.template_suffix == 'pre-order' -%}
+              <button type="submit" style="font-size: 19px;" type="submit" name="add" id="AddToCart" class="product-form__add-button button button--primary" data-action="add-to-cart">{{ 'product.form.pre_order' | t }}</button>
+            {%- else -%}
               {% comment %}<button type="submit" style="font-size: 19px;" type="submit" name="add" id="AddToCart" class="product-form__add-button button button--primary" data-action="add-to-cart">{{ 'product.form.add_to_cart' | t }}</button>{% endcomment %}
-            {% comment %}{%- endif -%}{% endcomment %}
+            {%- endif -%}
 
             {%- if section.settings.mostrar_addtocart -%}
-              <button type="submit" style="font-size: 16px;font-weight: bold; padding:0; line-height: 60px;" class="product-form__add-button button button--primary-add" data-action="add-to-cart">Aggiungi al carrello</button>
+              <button type="submit" style="font-size: 16px;font-weight: bold; padding:0; line-height: 60px;" class="product-form__add-button button button--primary-add" data-action="add-to-cart">{{ 'product.form.add_to_cart' | t }}</button>
               {%- endif -%}
         
           {%- else -%}
