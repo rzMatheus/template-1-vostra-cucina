@@ -51,8 +51,7 @@
 
         {%- if day_of_year == 1 -%}
             {% assign last_day_of_previous_year = previous_year | append: "-12-31" | date: "%j" %}
-            {% assign previous_year_date_factor = previous_year | times: 10000 | plus: 1231 %}
-            {% assign previous_year_daily_increment = previous_year_date_factor | modulo: 5 | plus: 3 %}
+            {% assign previous_year_daily_increment = last_day_of_previous_year | modulo: 5 | plus: 3 %}
             {% assign last_day_value = initial_value | plus: previous_year_daily_increment | times: last_day_of_previous_year %}
             {% assign random = last_day_value | plus: daily_increment %}
         {%- else -%}
