@@ -148,7 +148,7 @@
             "type": "text",
             "settings": {
               "title": "ASSISTENZA CLIENTI",
-              "content": "<p><strong>E-mail: <\/strong>contatto@vostracucina.it<\/p>"
+              "content": "<p><strong>E-mail: <\/strong>contattaci@vostracucina.com<\/p>"
             }
           },
           "footer-1": {
@@ -598,6 +598,7 @@
           "link_url": "",
           "show_vendor": false,
           "show_sku": false,
+          "show_add_to_cart": false,
           "show_share_buttons": true,
           "show_description": false,
           "description_below_add_to_cart": false,
