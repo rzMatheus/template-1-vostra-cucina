@@ -50,14 +50,12 @@
         {% assign initial_value = 72 %}
 
         {%- if day_of_year == 1 -%}
-            {# Calcula o valor do dia 31 de dezembro do ano anterior #}
             {% assign last_day_of_previous_year = previous_year | append: "-12-31" | date: "%j" %}
             {% assign previous_year_date_factor = previous_year | times: 10000 | plus: 1231 %}
             {% assign previous_year_daily_increment = previous_year_date_factor | modulo: 5 | plus: 3 %}
             {% assign last_day_value = initial_value | plus: previous_year_daily_increment | times: last_day_of_previous_year %}
             {% assign random = last_day_value | plus: daily_increment %}
         {%- else -%}
-            {# Incrementa o valor diariamente no ano corrente #}
             {% assign daily_increment = day_of_year | modulo: 5 | plus: 3 %}
             {% assign random = initial_value | plus: daily_increment | times: day_of_year %}
         {%- endif -%}
