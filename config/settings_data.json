@@ -192,12 +192,12 @@
           "image_g3WYfP": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/tagliere-italiano-banner.svg",
+              "image": "shopify:\/\/shop_images\/Spedizione_gratuita.svg",
               "show_overlay": false,
               "overlay_opacity": 30,
               "text_color": "#ffffff",
-              "title": "Slide title",
-              "content": "Tell your story",
+              "title": "",
+              "content": "",
               "content_position": "middle_center",
               "button_background": "#ffffff",
               "button_text_color": "#000000",
@@ -208,6 +208,7 @@
           "bbea030d-de91-4721-9ea1-9660f647bbd7": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/friggitrice_ad_aria.svg",
               "show_overlay": false,
               "overlay_opacity": 30,
               "text_color": "#ffffff",
