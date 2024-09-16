@@ -465,9 +465,9 @@
         {% assign free_shipping_threshold = 10 %}
         {% assign preco_produto = product.price | divided_by: 100 %}
 
-        <script>
-            console.log('Preço do produto: {{ product.price | money }}');
-        </script><!-- Defina o valor mínimo para frete grátis -->
+        {% comment %}<script>{% endcomment %}
+            {% comment %}console.log('Preço do produto: {{ product.price | money }}');{% endcomment %}
+        {% comment %}</script><!-- Defina o valor mínimo para frete grátis -->{% endcomment %}
     {% if preco_produto >= free_shipping_threshold %}
         <p class="ttl-frete">{{ section.settings.titulofrete }}
             <span class="ip-frete" id="custom-address">Caricamento delle informazioni...</span></p>
